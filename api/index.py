@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+﻿from fastapi import FastAPI
 import httpx
 import uvicorn
 
@@ -6,7 +6,7 @@ app = FastAPI()
 
 API_ENDPOINT = "https://api.douyin.wtf/api?url="
 
-@app.get("/parse")
+@app.get("/api/index/parse")
 async def parse(url: str):
     try:
         async with httpx.AsyncClient() as client:

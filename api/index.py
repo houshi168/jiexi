@@ -6,7 +6,7 @@ app = FastAPI()
 
 API_ENDPOINT = "https://api.douyin.wtf/api?url="
 
-@app.get("/api/index/parse")
+@app.get("/")
 async def parse(url: str):
     try:
         async with httpx.AsyncClient() as client:
